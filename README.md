@@ -1,8 +1,13 @@
-# Can a Movie's Script or Poster Predict Its Box Office Success?
+# Can a Movie's Script or Poster Predict Its Box Office Success? 
+## Using CNN and NLP to Predict Movie Commercial Success
+
+**Authors:** Anyi Sun, Caroline Berney, Ulemj Munkhtur, Victoria Figueroa
 
 This project explores whether machine learning models can predict a movie's commercial success using only its screenplay or poster image — without access to cast popularity, franchise status, or marketing budgets. We built NLP-based and CNN-based models and tested them against inflation-adjusted box office ROI across 1,297 movies.
 
 **Key finding:** Scripts alone explained less than 1% of ROI variance. Posters contained a small but measurable signal. Movie success depends heavily on factors outside the film itself.
+
+> **Note:** This project requires access to the shared Google Drive at `/content/gdrive/Shareddrives/FML_FINAL/`. File paths for posters and scripts throughout the notebooks are hardcoded to that shared drive directory and **will not work** without it. If you are not a collaborator with access to that shared drive, you will need to update all file paths and re-run the data collection pipeline from scratch.
 
 ---
 
@@ -156,7 +161,7 @@ pip install torch torchvision transformers accelerate scikit-learn xgboost captu
 
 ## Citation
 
-If you use the script database tooling, please cite:
+The `open_source/` scraping utilities in `DataCollection/` are adapted from the [Movie Script Database](https://github.com/Aveek-Saha/Movie-Script-Database) tool. If you use that tooling, please cite:
 
 ```bibtex
 @misc{Saha_Movie_Script_Database_2021,
